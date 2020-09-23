@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int Calage (int,int);
+int Calage (int);
 int main()
 {
 	int year,age;
@@ -8,23 +8,16 @@ int main()
 	for(int i=1;i<=3;i++)
 	{ cout <<"Enter year"<<i<<":";
 	  cin >> year;
-	  age = 2563 - year;
-	  cout <<"Age"<<i<<":"<< age <<endl;
-	  Calage(year,age);
+	  int a = Calage(year);
+	  cout <<"Age "<<":"<< a <<endl;
+	  
 	}
     return 0;
 }
-int Calage(int year,int age)
+int Calage(int y)
       {
-		 age = 2563 - year;
+		int a;
+		 a = 2563 - y;
 
-		return(age);
+		return(a);
       }
-
-
-
-
-
-
-
-
